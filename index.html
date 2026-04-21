@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Schedule Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>📅 Food Schedule Generator</h2>
+
+        <label>Start Date:</label>
+        <input type="date" id="startDate">
+
+        <label>End Date:</label>
+        <input type="date" id="endDate">
+
+        <input type="file" id="fileInput" accept=".txt">
+
+        <button onclick="generateSchedule()">Generate Schedule</button>
+
+        <div class="actions">
+            <button onclick="downloadTXT()">📥 Download .txt</button>
+            <button onclick="copyToClipboard()">📋 Copy</button>
+        </div>
+
+        <pre id="output"></pre>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
