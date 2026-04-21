@@ -51,10 +51,11 @@
 
                 result += `${month} ${day}\n`;
 
-                meals.forEach(meal => {
-                    const person = names[nameIndex % names.length];
-                    result += `${meal} - ${person}\n`;
-                    nameIndex++;
+                let shuffled = [...names].sort(() => Math.random() - 0.5);
+
+                meals.forEach((meal, index) => {
+                const person = shuffled[index % shuffled.length];
+                result += `${meal} - ${person}\n`;
                 });
 
                 result += "\n";
