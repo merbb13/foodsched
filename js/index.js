@@ -42,6 +42,7 @@
             ];
 
             let result = "FOOD SCHEDULE FOR GUARD\n\n";
+            let footer = "THANK YOU FOR \nPARTICIPATING❤️❤️❤️ "
             let currentDate = new Date(startDate);
             let nameIndex = 0;
 
@@ -62,6 +63,7 @@
 
                 currentDate.setDate(currentDate.getDate() + 1);
             }
+            result += footer;
 
             return result.trim();
         }
